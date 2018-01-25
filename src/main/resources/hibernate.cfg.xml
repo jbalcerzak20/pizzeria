@@ -8,9 +8,9 @@
 	<session-factory>
 		<!-- Database connection settings -->
 		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-		<property name="hibernate.connection.url">jdbc:mysql://localhost/pizzeria?characterEncoding=UTF-8</property>
-		<property name="hibernate.connection.username">root</property>
-		<property name="hibernate.connection.password"></property>
+		<property name="hibernate.connection.url">jdbc:mysql://http://mysql-persistent-my-app-rest.7e14.starter-us-west-2.openshiftapps.com/pizzeria?characterEncoding=UTF-8</property>
+		<property name="hibernate.connection.username">user4P6</property>
+		<property name="hibernate.connection.password">U4i1kY7H00XR5KdB</property>
 
 		<!-- JDBC connection pool (use the built-in) -->
 		<property name="hibernate.connection.pool_size">10</property>
