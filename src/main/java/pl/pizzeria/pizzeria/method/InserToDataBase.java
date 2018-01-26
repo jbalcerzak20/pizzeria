@@ -18,7 +18,6 @@ import pl.pizzeria.pizzeria.model.entity.User;
 
 public class InserToDataBase {
 
-	@Autowired
 	private static SessionFactory factory;
 	private static Session session;
 	
