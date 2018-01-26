@@ -2,14 +2,7 @@ package pl.pizzeria.pizzeria.model.entity;
 
 import java.io.Serializable;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name="uzytkownicy")
@@ -21,7 +14,8 @@ public class User implements Serializable {
 	private static final long serialVersionUID = 911163785184759604L;
 	
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+//	@Column(columnDefinition = "serial")
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
 	private String imie;
 	private String nazwisko;
