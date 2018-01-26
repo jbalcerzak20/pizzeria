@@ -19,6 +19,6 @@ public class StartHibernate {
 
 	@PostConstruct
 	public void init() {
-		InserToDataBase.insert();
+//		InserToDataBase.insert();
 	}
 }
