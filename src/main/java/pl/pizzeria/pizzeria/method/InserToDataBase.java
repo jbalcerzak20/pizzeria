@@ -8,6 +8,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import pl.pizzeria.pizzeria.model.entity.Address;
 import pl.pizzeria.pizzeria.model.entity.Component;
 import pl.pizzeria.pizzeria.model.entity.Order;
@@ -17,6 +18,7 @@ import pl.pizzeria.pizzeria.model.entity.User;
 
 public class InserToDataBase {
 
+	@Autowired
 	private static SessionFactory factory;
 	private static Session session;
 	
